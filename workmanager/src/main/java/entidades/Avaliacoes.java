@@ -1,37 +1,23 @@
 package entidades;
 
-import java.time.LocalDate;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
 
-@Entity
-public class Servico {
+
+    @Entity
+    public class Avaliacoes {
+    
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-
     public Integer codigo;
 
-    public LocalDate data_solitacao;
+    public Integer nota;
 
-    public LocalDate data_conclusao;
-
-    public String descricao;
-
-    public String statu;
+    public String comentario;
 
     @ManyToOne
     public Cliente cliente;
-
-    @ManyToOne
-    public Prestador prestador;
-
-    @ManyToOne
-    public Chats chats;
-
-    @ManyToOne
-    public Avaliacoes avaliacoes;
 }

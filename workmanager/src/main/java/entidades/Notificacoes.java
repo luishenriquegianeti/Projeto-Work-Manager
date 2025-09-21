@@ -8,30 +8,30 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
 
+//idcliente
+//idPrestador
+//idchat
+//data_envio datati
+//Mensagem
 @Entity
-public class Servico {
+public class Notificacoes {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
     public Integer codigo;
 
-    public LocalDate data_solitacao;
+    public LocalDate data_invio;
 
-    public LocalDate data_conclusao;
-
-    public String descricao;
-
-    public String statu;
-
-    @ManyToOne
-    public Cliente cliente;
+    public String mensagem;
 
     @ManyToOne
     public Prestador prestador;
 
     @ManyToOne
-    public Chats chats;
+    public Cliente cliente;
 
     @ManyToOne
-    public Avaliacoes avaliacoes;
+    public Chats chats;
+
 }
