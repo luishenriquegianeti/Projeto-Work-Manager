@@ -58,20 +58,20 @@ VALUES ('Atendente Lucas', 'Sentimos muito pelos transtornos. Estamos analisando
 INSERT INTO Chats (remetente, mensagen, avaliacoes_codigo) 
 VALUES ('Suporte Fernanda', 'Pedimos desculpas e garantimos que isso não se repetirá.', 5);
 
-INSERT INTO Notificacoes (data_invio, mensagem, prestador_codigo, cliente_codigo chats_codigo)
+INSERT INTO Notificacoes (data_invio, mensagem, prestador_codigo, cliente_codigo, chats_codigo)
 VALUES ('2025-09-01', 'Olá, estou com uma dúvida sobre o serviço.', 1, 1, 1);
 
 INSERT INTO Notificacoes (data_invio, mensagem, prestador_codigo, cliente_codigo, chats_codigo)
-VALUES ('2025-09-01', 'Claro, posso te ajudar. Qual a sua dúvida?', 1, 1, 1);
+VALUES ('2025-09-01', 'Claro, posso te ajudar. Qual a sua dúvida?', 2, 2, 2);
 
 INSERT INTO Notificacoes (data_invio, mensagem, prestador_codigo, cliente_codigo, chats_codigo)
-VALUES ('2025-09-02', 'Gostaria de agendar um horário.', 2, 2, 2);
+VALUES ('2025-09-02', 'Gostaria de agendar um horário.', 3, 3, 3);
 
 INSERT INTO Notificacoes (data_invio, mensagem, prestador_codigo, cliente_codigo, chats_codigo)
-VALUES ('2025-09-02', 'Horário disponível: quinta às 15h.', 2, 2, 2);
+VALUES ('2025-09-02', 'Horário disponível: quinta às 15h.', 4, 4, 4);
 
 INSERT INTO Notificacoes (data_invio, mensagem, prestador_codigo, cliente_codigo, chats_codigo)
-VALUES ('2025-09-03', 'Obrigado pelo atendimento!', 3, 3, 3);
+VALUES ('2025-09-03', 'Obrigado pelo atendimento!', 5, 5, 5);
 
 INSERT INTO Servico (data_solitacao, data_conclusao, descricao, statu, cliente_codigo, prestador_codigo, chats_codigo, avaliacoes_codigo)
 VALUES ('2025-08-01', '2025-08-03', 'Instalação de ventilador de teto', 'Concluído', 1, 1, 1, 1);
@@ -80,10 +80,10 @@ INSERT INTO Servico (data_solitacao, data_conclusao, descricao, statu, cliente_c
 VALUES ('2025-08-05', '2025-08-06', 'Manutenção elétrica residencial', 'Concluído', 2, 2, 2, 2);
 
 INSERT INTO Servico (data_solitacao, data_conclusao, descricao, statu, cliente_codigo, prestador_codigo, chats_codigo, avaliacoes_codigo)
-VALUES ('2025-08-10', NULL, 'Orçamento para reforma hidráulica', 'Em análise', 3, 3, 3, NULL);
+VALUES ('2025-08-10', '2025-08-16', 'Orçamento para reforma hidráulica', 'Em análise', 3, 3, 3, 3);
 
 INSERT INTO Servico (data_solitacao, data_conclusao, descricao, statu, cliente_codigo, prestador_codigo, chats_codigo, avaliacoes_codigo)
-VALUES ('2025-08-12', NULL, 'Troca de tomadas e disjuntores', 'Pendente', 4, 2, 4, NULL);
+VALUES ('2025-08-12', '2025-08-16', 'Troca de tomadas e disjuntores', 'Pendente', 4, 2, 4, 4);
 
 INSERT INTO Servico (data_solitacao, data_conclusao, descricao, statu, cliente_codigo, prestador_codigo, chats_codigo, avaliacoes_codigo)
 VALUES ('2025-08-15', '2025-08-16', 'Conserto de interfone', 'Concluído', 5, 1, 5, 5);
