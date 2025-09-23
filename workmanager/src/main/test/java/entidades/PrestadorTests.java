@@ -1,9 +1,10 @@
 package entidades;
 
 import jakarta.transaction.Transactional;
-
+import org.junit.jupiter.api.Test;
+import io.quarkus.test.junit.QuarkusTest;
 @QuarkusTest
-public class Prestador {
+public class PrestadorTests {
 
     @Test
     @Transactional
@@ -14,6 +15,7 @@ public class Prestador {
         prestador.email = "gabriel5534@gmail.com";
         prestador.telefone = "14576423423";
         prestador.endereco = "rua grabriel freitas";
-        prestador.senha = "Gabriel51234";       
+        prestador.senha = "Gabriel51234"; 
+        prestador.persist();    
     }
 }

@@ -8,11 +8,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
 
-//idcliente
-//idPrestador
-//idchat
-//data_envio datati
-//Mensagem
+
 @Entity
 public class Notificacoes {
 

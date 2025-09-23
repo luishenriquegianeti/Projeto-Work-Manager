@@ -4,7 +4,7 @@ import jakarta.transaction.Transactional;
 import org.junit.jupiter.api.Test;
 import io.quarkus.test.junit.QuarkusTest;
 @QuarkusTest
-    public class Clientes {
+    public class ClientesTests {
         @Test
         @Transactional
         public void testCadastrarCliente(){
@@ -17,6 +17,6 @@ import io.quarkus.test.junit.QuarkusTest;
            cliente.endereco = "rua são fransico ";
            cliente.email = "joao423@gmail.com";
            cliente.senha = "Joao524234" ;
-           
+           cliente.persist();
         }
 }
